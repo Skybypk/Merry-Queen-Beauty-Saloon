@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Merry Queen Beauty Saloon - Enhancing Your Natural Beauty. Professional bridal makeup, facial treatments, hair styling, manicure, pedicure, and skin care services in Karachi.">
+    <meta name="keywords" content="beauty salon, bridal makeup, facial, hair styling, manicure, pedicure, skin care, Karachi, Merry Queen">
+    <meta name="author" content="Merry Queen Beauty Saloon">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Merry Queen Beauty Saloon - Enhancing Your Natural Beauty">
+    <meta property="og:description" content="Professional beauty services including bridal makeup, facials, hair styling, and more in Karachi.">
+    <meta property="og:type" content="website">
+
+    <title>Merry Queen Beauty Saloon | Enhancing Your Natural Beauty</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-pink': '#E8A4B8',
+                        'soft-pink': '#F8E1E7',
+                        'deep-pink': '#C47A8E',
+                        'gold': '#D4AF37',
+                        'light-gold': '#F4E4BC',
+                        'cream': '#FFFBF5',
+                        'rose-gold': '#B76E79'
+                    },
+                    fontFamily: {
+                        'heading': ['Playfair Display', 'serif'],
+                        'body': ['Poppins', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-body bg-cream overflow-x-hidden">
+    <!-- Floating Background Particles -->
+    <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+        <div class="particle particle-1"></div>
+        <div class="particle particle-2"></div>
+        <div class="particle particle-3"></div>
+        <div class="particle particle-4"></div>
+        <div class="particle particle-5"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md shadow-lg transition-all duration-500" id="navbar">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <a href="#" class="text-2xl md:text-3xl font-heading font-bold text-deep-pink logo-glow">
+                    <i class="fas fa-crown text-gold mr-2 animate-float"></i>Merry Queen
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-deep-pink transition-all duration-300 font-medium">Home</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-deep-pink transition-all duration-300 font-medium">About</a>
+                    <a href="#services" class="nav-link text-gray-700 hover:text-deep-pink transition-all duration-300 font-medium">Services</a>
+                    <a href="#gallery" class="nav-link text-gray-700 hover:text-deep-pink transition-all duration-300 font-medium">Gallery</a>
+                    <a href="#testimonials" class="nav-link text-gray-700 hover:text-deep-pink transition-all duration-300 font-medium">Testimonials</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-deep-pink transition-all duration-300 font-medium">Contact</a>
+                    <a href="tel:03333341560" class="btn-premium">
+                        <i class="fas fa-phone-alt mr-2"></i>Book Now
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-gray-700 focus:outline-none" id="mobile-menu-btn" aria-label="Toggle menu">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="flex flex-col space-y-4 mt-4 pb-4 bg-white/95 rounded-xl p-4 shadow-xl">
+                    <a href="#home" class="mobile-nav-link text-gray-700 hover:text-deep-pink transition-colors duration-300">Home</a>
+                    <a href="#about" class="mobile-nav-link text-gray-700 hover:text-deep-pink transition-colors duration-300">About</a>
+                    <a href="#services" class="mobile-nav-link text-gray-700 hover:text-deep-pink transition-colors duration-300">Services</a>
+                    <a href="#gallery" class="mobile-nav-link text-gray-700 hover:text-deep-pink transition-colors duration-300">Gallery</a>
+                    <a href="#testimonials" class="mobile-nav-link text-gray-700 hover:text-deep-pink transition-colors duration-300">Testimonials</a>
+                    <a href="#contact" class="mobile-nav-link text-gray-700 hover:text-deep-pink transition-colors duration-300">Contact</a>
+                    <a href="tel:03333341560" class="btn-premium text-center">
+                        <i class="fas fa-phone-alt mr-2"></i>Book Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section relative min-h-screen flex items-center justify-center overflow-hidden">
+        <!-- Animated Background -->
+        <div class="absolute inset-0 bg-gradient-to-br from-deep-pink/40 via-primary-pink/30 to-gold/30 z-10"></div>
+        <div class="absolute inset-0 hero-bg z-0"></div>
+
+        <!-- Floating Elements -->
+        <div class="absolute inset-0 z-10 overflow-hidden pointer-events-none">
+            <div class="floating-flower floating-flower-1"><i class="fas fa-spa"></i></div>
+            <div class="floating-flower floating-flower-2"><i class="fas fa-leaf"></i></div>
+            <div class="floating-flower floating-flower-3"><i class="fas fa-star"></i></div>
+            <div class="floating-flower floating-flower-4"><i class="fas fa-heart"></i></div>
+        </div>
+
+        <div class="relative z-20 container mx-auto px-4 text-center text-white">
+            <div data-aos="fade-up" data-aos-duration="1200">
+                <div class="mb-6">
+                    <i class="fas fa-crown text-6xl md:text-8xl text-gold animate-pulse-slow crown-glow"></i>
+                </div>
+                <p class="text-lg md:text-xl font-light mb-4 text-gold/90 tracking-widest uppercase">Welcome to</p>
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-heading font-bold mb-6 leading-tight hero-title">
+                    Merry Queen<br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold via-primary-pink to-gold animate-gradient">Beauty Saloon</span>
+                </h1>
+                <p class="text-xl md:text-2xl lg:text-3xl font-light mb-10 text-gold italic max-w-3xl mx-auto hero-tagline">
+                    "Enhancing Your Natural Beauty"
+                </p>
+                <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                    <a href="tel:03333341560" class="btn-gold-premium group">
+                        <i class="fas fa-calendar-check mr-2 group-hover:rotate-12 transition-transform"></i>Book Appointment
+                    </a>
+                    <a href="#services" class="btn-white-premium group">
+                        <i class="fas fa-spa mr-2 group-hover:rotate-12 transition-transform"></i>Our Services
+                    </a>
+                </div>
+
+                <!-- Stats -->
+                <div class="grid grid-cols-3 gap-6 mt-16 max-w-3xl mx-auto">
+                    <div class="text-center">
+                        <p class="text-4xl md:text-5xl font-bold text-gold mb-2">5+</p>
+                        <p class="text-sm md:text-base text-white/80">Years Experience</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-4xl md:text-5xl font-bold text-gold mb-2">2000+</p>
+                        <p class="text-sm md:text-base text-white/80">Happy Clients</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-4xl md:text-5xl font-bold text-gold mb-2">50+</p>
+                        <p class="text-sm md:text-base text-white/80">Services</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Down Indicator -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20">
+            <a href="#about" class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 md:py-28 bg-gradient-to-b from-cream via-soft-pink/30 to-white relative overflow-hidden">
+        <!-- Decorative Elements -->
+        <div class="absolute top-0 left-0 w-64 h-64 bg-gold/5 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-primary-pink/10 rounded-full blur-3xl"></div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+                <div class="about-image" data-aos="fade-right" data-aos-duration="1200">
+                    <div class="relative">
+                        <!-- Decorative Frame -->
+                        <div class="absolute -top-6 -left-6 w-full h-full border-2 border-gold/30 rounded-3xl"></div>
+                        <div class="absolute -top-4 -left-4 w-24 h-24 bg-gradient-to-br from-gold/40 to-primary-pink/40 rounded-full blur-xl"></div>
+                        <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-gradient-to-br from-primary-pink/40 to-deep-pink/40 rounded-full blur-xl"></div>
+
+                        <!-- Main Image -->
+                        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                             alt="Merry Queen Beauty Saloon Interior"
+                             class="relative rounded-3xl shadow-2xl w-full object-cover h-[400px] md:h-[500px] about-img-hover">
+
+                        <!-- Experience Badge -->
+                        <div class="absolute -bottom-8 -right-8 bg-white p-6 rounded-2xl shadow-2xl hidden md:block animate-float">
+                            <div class="text-center">
+                                <p class="text-5xl font-heading font-bold bg-gradient-to-r from-gold to-deep-pink bg-clip-text text-transparent">5+</p>
+                                <p class="text-gray-600 text-sm font-medium">Years of Excellence</p>
+                                <div class="flex justify-center mt-2">
+                                    <div class="flex space-x-1">
+                                        <i class="fas fa-star text-gold"></i>
+                                        <i class="fas fa-star text-gold"></i>
+                                        <i class="fas fa-star text-gold"></i>
+                                        <i class="fas fa-star text-gold"></i>
+                                        <i class="fas fa-star text-gold"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Icon -->
+                        <div class="absolute top-10 -right-6 bg-gradient-to-br from-gold to-light-gold p-4 rounded-2xl shadow-lg animate-float-slow hidden lg:block">
+                            <i class="fas fa-spa text-3xl text-white"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-content" data-aos="fade-left" data-aos-duration="1200">
+                    <div class="inline-block bg-gradient-to-r from-primary-pink/20 to-deep-pink/20 px-6 py-3 rounded-full mb-6 border border-primary-pink/30">
+                        <span class="text-deep-pink font-semibold flex items-center">
+                            <i class="fas fa-heart mr-2 text-gold"></i>About Us
+                        </span>
+                    </div>
+                    <h2 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-gray-800 mb-6 leading-tight">
+                        Welcome to <span class="text-transparent bg-clip-text bg-gradient-to-r from-deep-pink to-primary-pink">Merry Queen</span>
+                    </h2>
+                    <p class="text-gray-600 text-lg mb-6 leading-relaxed">
+                        At Merry Queen Beauty Saloon, we believe that every woman deserves to feel beautiful and confident.
+                        Our team of highly skilled professionals is dedicated to providing you with exceptional beauty
+                        services tailored to your unique needs and preferences.
+                    </p>
+                    <p class="text-gray-600 text-lg mb-8 leading-relaxed">
+                        With years of experience and a passion for excellence, we use only premium quality products
+                        and the latest techniques to ensure you receive the best care possible. Whether you're preparing
+                        for your special day or simply want to pamper yourself, we're here to make you look and feel
+                        your absolute best.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-4 mb-8">
+                        <div class="feature-box">
+                            <div class="bg-gradient-to-br from-gold/20 to-light-gold/20 p-3 rounded-full inline-block">
+                                <i class="fas fa-check-circle text-gold text-xl"></i>
+                            </div>
+                            <span class="text-gray-700 font-medium ml-2">Professional Staff</span>
+                        </div>
+                        <div class="feature-box">
+                            <div class="bg-gradient-to-br from-gold/20 to-light-gold/20 p-3 rounded-full inline-block">
+                                <i class="fas fa-check-circle text-gold text-xl"></i>
+                            </div>
+                            <span class="text-gray-700 font-medium ml-2">Premium Products</span>
+                        </div>
+                        <div class="feature-box">
+                            <div class="bg-gradient-to-br from-gold/20 to-light-gold/20 p-3 rounded-full inline-block">
+                                <i class="fas fa-check-circle text-gold text-xl"></i>
+                            </div>
+                            <span class="text-gray-700 font-medium ml-2">Hygienic Environment</span>
+                        </div>
+                        <div class="feature-box">
+                            <div class="bg-gradient-to-br from-gold/20 to-light-gold/20 p-3 rounded-full inline-block">
+                                <i class="fas fa-check-circle text-gold text-xl"></i>
+                            </div>
+                            <span class="text-gray-700 font-medium ml-2">Personalized Care</span>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#contact" class="btn-premium inline-flex items-center group">
+                            <i class="fas fa-arrow-right mr-2 group-hover:translate-x-1 transition-transform"></i>Visit Us Today
+                        </a>
+                        <a href="tel:03333341560" class="btn-outline-premium inline-flex items-center">
+                            <i class="fas fa-phone-alt mr-2"></i>0333-3341560
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 md:py-28 bg-white relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute top-20 left-10 text-9xl text-deep-pink"><i class="fas fa-spa"></i></div>
+            <div class="absolute bottom-20 right-10 text-9xl text-gold"><i class="fas fa-crown"></i></div>
+            <div class="absolute top-1/2 left-1/2 text-9xl text-primary-pink"><i class="fas fa-heart"></i></div>
+        </div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-16" data-aos="fade-up" data-aos-duration="1000">
+                <div class="inline-block bg-gradient-to-r from-soft-pink to-primary-pink/30 px-6 py-3 rounded-full mb-4 border border-primary-pink/30">
+                    <span class="text-deep-pink font-semibold flex items-center justify-center">
+                        <i class="fas fa-gem mr-2 text-gold"></i>Our Services
+                    </span>
+                </div>
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-gray-800 mb-4">
+                    What We <span class="text-transparent bg-clip-text bg-gradient-to-r from-deep-pink to-gold">Offer</span>
+                </h2>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                    Discover our range of premium beauty services designed to make you look and feel your best
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1: Bridal Makeup -->
+                <div class="service-card-premium group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card-image">
+                        <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                             alt="Bridal Makeup"
+                             class="service-img">
+                        <div class="absolute top-4 right-4 bg-gradient-to-r from-gold to-light-gold text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
+                            <i class="fas fa-fire mr-1"></i>Popular
+                        </div>
+                        <div class="service-overlay">
+                            <a href="tel:03333341560" class="service-btn">
+                                <i class="fas fa-book-now"></i> Book Now
+                            </a>
+                        </div>
+                    </div>
+                    <div class="service-card-content">
+                        <div class="service-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3 class="text-2xl font-heading font-bold text-gray-800 mb-3 group-hover:text-deep-pink transition-colors">Bridal Makeup</h3>
+                        <p class="text-gray-600 mb-4">
+                            Complete bridal makeup packages with professional artists to make your special day unforgettable.
+                        </p>
+                        <a href="tel:03333341560" class="service-link">
+                            Book Now <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform inline-block"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service Card 2: Facial Treatments -->
+                <div class="service-card-premium group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card-image">
+                        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                             alt="Facial Treatments"
+                             class="service-img">
+                        <div class="service-overlay">
+                            <a href="tel:03333341560" class="service-btn">
+                                <i class="fas fa-book-now"></i> Book Now
+                            </a>
+                        </div>
+                    </div>
+                    <div class="service-card-content">
+                        <div class="service-icon">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                        <h3 class="text-2xl font-heading font-bold text-gray-800 mb-3 group-hover:text-deep-pink transition-colors">Facial Treatments</h3>
+                        <p class="text-gray-600 mb-4">
+                            Rejuvenating facials using premium products to refresh and revitalize your skin.
+                        </p>
+                        <a href="tel:03333341560" class="service-link">
+                            Book Now <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform inline-block"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service Card 3: Hair Styling -->
+                <div class="service-card-premium group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card-image">
+                        <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                             alt="Hair Styling"
+                             class="service-img">
+                        <div class="service-overlay">
+                            <a href="tel:03333341560" class="service-btn">
+                                <i class="fas fa-book-now"></i> Book Now
+                            </a>
+                        </div>
+                    </div>
+                    <div class="service-card-content">
+                        <div class="service-icon">
+                            <i class="fas fa-cut"></i>
+                        </div>
+                        <h3 class="text-2xl font-heading font-bold text-gray-800 mb-3 group-hover:text-deep-pink transition-colors">Hair Styling</h3>
+                        <p class="text-gray-600 mb-4">
+                            Expert haircuts, styling, coloring, and treatments to give you the perfect look.
+                        </p>
+                        <a href="tel:03333341560" class="service-link">
+                            Book Now <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform inline-block"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service Card 4: Manicure & Pedicure -->
+                <div class="service-card-premium group" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-card-image">
+                        <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                             alt="Manicure & Pedicure"
+                             class="service-img">
+                        <div class="service-overlay">
+                            <a href="tel:03333341560" class="service-btn">
+                                <i class="fas fa-book-now"></i> Book Now
+                            </a>
+                        </div>
+                    </div>
+                    <div class="service-card-content">
+                        <div class="service-icon">
+                            <i class="fas fa-hand-sparkles"></i>
+                        </div>
+                        <h3 class="text-2xl font-heading font-bold text-gray-800 mb-3 group-hover:text-deep-pink transition-colors">Manicure & Pedicure</h3>
+                        <p class="text-gray-600 mb-4">
+                            Luxurious nail care services including shaping, polishing, and nail art designs.
+                        </p>
+                        <a href="tel:03333341560" class="service-link">
+                            Book Now <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform inline-block"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service Card 5: Skin Care -->
+                <div class="service-card-premium group" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-card-image">
+                        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                             alt="Skin Care"
+                             class="service-img">
+                        <div class="service-overlay">
+                            <a href="tel:03333341560" class="service-btn">
+                                <i class="fas fa-book-now"></i> Book Now
+                            </a>
+                        </div>
+                    </div>
+                    <div class="service-card-content">
+                        <div class="service-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3 class="text-2xl font-heading font-bold text-gray-800 mb-3 group-hover:text-deep-pink transition-colors">Skin Care</h3>
+                        <p class="text-gray-600 mb-4">
+                            Advanced skin care treatments including threading, waxing, and specialized treatments.
+                        </p>
+                        <a href="tel:03333341560" class="service-link">
+                            Book Now <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform inline-block"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service Card 6: Special Packages -->
+                <div class="service-card-premium group special-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-card-content text-white h-full flex flex-col justify-center">
+                        <div class="service-icon-special">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                        <h3 class="text-2xl font-heading font-bold mb-3">Special Packages</h3>
+                        <p class="text-white/90 mb-6">
+                            Customized beauty packages for weddings, parties, and special occasions. Get the complete makeover experience!
+                        </p>
+                        <a href="tel:03333341560" class="service-link-white">
+                            Learn More <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform inline-block"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 md:py-28 bg-gradient-to-b from-white to-cream relative overflow-hidden">
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-16" data-aos="fade-up" data-aos-duration="1000">
+                <div class="inline-block bg-gradient-to-r from-primary-pink/30 to-deep-pink/30 px-6 py-3 rounded-full mb-4 border border-deep-pink/30">
+                    <span class="text-deep-pink font-semibold flex items-center justify-center">
+                        <i class="fas fa-images mr-2 text-gold"></i>Our Gallery
+                    </span>
+                </div>
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-gray-800 mb-4">
+                    Beautiful <span class="text-transparent bg-clip-text bg-gradient-to-r from-deep-pink to-gold">Moments</span>
+                </h2>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                    Take a look at some of our amazing work and happy clients
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Makeup Art">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Bridal Makeup">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Hair Styling">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Nail Art">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="500">
+                    <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Facial Treatment">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="600">
+                    <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Hair Care">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="700">
+                    <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Spa Treatment">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="800">
+                    <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Skin Care">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 md:py-28 bg-gradient-to-br from-deep-pink via-primary-pink to-soft-pink relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-10 left-10 text-6xl text-white"><i class="fas fa-quote-left"></i></div>
+            <div class="absolute bottom-10 right-10 text-6xl text-white"><i class="fas fa-quote-right"></i></div>
+        </div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-16" data-aos="fade-up" data-aos-duration="1000">
+                <div class="inline-block bg-white/20 backdrop-blur-sm px-6 py-3 rounded-full mb-4 border border-white/30">
+                    <span class="text-white font-semibold flex items-center justify-center">
+                        <i class="fas fa-comments mr-2 text-gold"></i>Testimonials
+                    </span>
+                </div>
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-4">
+                    What Our <span class="text-gold">Clients Say</span>
+                </h2>
+                <p class="text-white/90 text-lg max-w-2xl mx-auto">
+                    Don't just take our word for it - hear from our satisfied clients
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Absolutely amazing experience! The bridal makeup was perfect and lasted all day. The team is so professional and friendly. Highly recommend!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <p class="author-name">Fatima Ahmed</p>
+                            <p class="author-title">Bridal Client</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Best salon in Karachi! The facial treatments are incredible and the staff is very attentive. I always leave feeling refreshed and beautiful."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <p class="author-name">Ayesha Khan</p>
+                            <p class="author-title">Regular Client</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "The hair styling team is exceptional! They understood exactly what I wanted and delivered beyond my expectations. Will definitely be back!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <p class="author-name">Zainab Ali</p>
+                            <p class="author-title">Hair Client</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Working Hours Section -->
+    <section class="py-16 bg-gradient-to-r from-gold via-light-gold to-gold relative overflow-hidden">
+        <div class="absolute inset-0 bg-pattern opacity-10"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-10" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-heading font-bold text-white mb-4">
+                        <i class="fas fa-clock mr-3"></i>Working Hours
+                    </h2>
+                    <p class="text-white/90 text-lg">We're open every day to serve you better</p>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-md rounded-3xl p-8 shadow-2xl border border-white/20" data-aos="zoom-in">
+                    <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                        <div class="text-center md:text-left">
+                            <p class="text-white text-xl font-semibold">Monday to Sunday</p>
+                            <p class="text-white/80">Open all week for your convenience</p>
+                        </div>
+                        <div class="bg-gradient-to-r from-deep-pink to-primary-pink text-white px-10 py-5 rounded-full shadow-2xl transform hover:scale-105 transition-transform">
+                            <p class="text-3xl md:text-4xl font-bold">12 PM – 9 PM</p>
+                        </div>
+                        <div class="text-center md:text-right">
+                            <p class="text-white text-xl font-semibold">7 Days a Week</p>
+                            <p class="text-white/80">No holidays, always here for you</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 md:py-28 bg-gradient-to-b from-soft-pink to-cream relative overflow-hidden">
+        <!-- Decorative Elements -->
+        <div class="absolute top-0 right-0 w-64 h-64 bg-gold/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-primary-pink/10 rounded-full blur-3xl"></div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-16" data-aos="fade-up" data-aos-duration="1000">
+                <div class="inline-block bg-white px-6 py-3 rounded-full mb-4 shadow-lg border border-primary-pink/30">
+                    <span class="text-deep-pink font-semibold flex items-center justify-center">
+                        <i class="fas fa-envelope mr-2 text-gold"></i>Contact Us
+                    </span>
+                </div>
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-gray-800 mb-4">
+                    Get In <span class="text-transparent bg-clip-text bg-gradient-to-r from-deep-pink to-gold">Touch</span>
+                </h2>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                    Visit us or get in touch for appointments and inquiries
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Contact Information -->
+                <div class="space-y-6" data-aos="fade-right" data-aos-duration="1200">
+                    <div class="contact-card-premium">
+                        <h3 class="text-2xl font-heading font-bold text-gray-800 mb-6">
+                            <i class="fas fa-map-marker-alt text-deep-pink mr-3"></i>Our Location
+                        </h3>
+
+                        <div class="space-y-6">
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-home"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-800 mb-1">Address</p>
+                                    <p class="text-gray-600">House # 31, 2, Model Colony Sheet # 4<br>Lasi Para, Karachi, 75100, Pakistan</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marked-alt"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-800 mb-1">Plus Code</p>
+                                    <p class="text-gray-600">W52M+X6 Model Colony, Malir Cantonment<br>Karachi, Pakistan</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-800 mb-1">Phone Number</p>
+                                    <a href="tel:03333341560" class="text-deep-pink font-bold text-lg hover:text-primary-pink transition-colors duration-300">
+                                        0333-3341560
+                                    </a>
+                                    <p class="text-gray-500 text-sm mt-1">Click to call now</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-800 mb-1">Working Hours</p>
+                                    <p class="text-gray-600">Monday - Sunday: 12 PM – 9 PM</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-8 pt-6 border-t border-gray-200">
+                            <a href="tel:03333341560" class="btn-premium w-full justify-center">
+                                <i class="fas fa-phone-alt mr-2"></i>Call Now
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Social Media Links -->
+                    <div class="bg-white rounded-2xl shadow-xl p-6 border border-primary-pink/20" data-aos="fade-right" data-aos-delay="200">
+                        <h3 class="text-xl font-heading font-bold text-gray-800 mb-4">Follow Us</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="social-icon instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-icon facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon youtube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="https://wa.me/923333341560" class="social-icon whatsapp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Google Maps -->
+                <div class="bg-white rounded-3xl shadow-2xl overflow-hidden border border-primary-pink/20" data-aos="fade-left" data-aos-duration="1200">
+                    <div class="h-[500px] w-full">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.678970123456!2d67.1234567!3d24.9123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f0e0e0e0e0e%3A0x0!2sModel%20Colony%2C%20Karachi!5e0!3m2!1sen!2s!4v1234567890"
+                            width="100%"
+                            height="100%"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Merry Queen Beauty Saloon Location">
+                        </iframe>
+                    </div>
+                    <div class="p-6 bg-gradient-to-r from-deep-pink to-primary-pink">
+                        <a href="https://maps.app.goo.gl/AQNpFrCp3jzQtjAPA"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="btn-white-premium w-full justify-center">
+                            <i class="fas fa-directions mr-2"></i>Get Directions
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-16 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute top-10 left-10 text-6xl text-gold"><i class="fas fa-crown"></i></div>
+            <div class="absolute bottom-10 right-10 text-6xl text-primary-pink"><i class="fas fa-spa"></i></div>
+        </div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="grid md:grid-cols-3 gap-12 mb-12">
+                <!-- Brand Info -->
+                <div>
+                    <h3 class="text-3xl font-heading font-bold mb-4 logo-glow">
+                        <i class="fas fa-crown text-gold mr-2"></i>Merry Queen
+                    </h3>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        Enhancing Your Natural Beauty with professional services and personalized care.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="social-icon-footer instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon-footer facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon-footer youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://wa.me/923333341560" class="social-icon-footer whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-xl font-semibold mb-6 text-gold">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-400 hover:text-gold transition-colors duration-300 flex items-center"><i class="fas fa-chevron-right text-xs mr-2"></i>Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-gold transition-colors duration-300 flex items-center"><i class="fas fa-chevron-right text-xs mr-2"></i>About Us</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-gold transition-colors duration-300 flex items-center"><i class="fas fa-chevron-right text-xs mr-2"></i>Services</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-gold transition-colors duration-300 flex items-center"><i class="fas fa-chevron-right text-xs mr-2"></i>Gallery</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-gold transition-colors duration-300 flex items-center"><i class="fas fa-chevron-right text-xs mr-2"></i>Testimonials</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-gold transition-colors duration-300 flex items-center"><i class="fas fa-chevron-right text-xs mr-2"></i>Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-xl font-semibold mb-6 text-gold">Contact Info</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-map-marker-alt text-gold mt-1"></i>
+                            <span class="text-gray-400">House # 31, 2, Model Colony Sheet # 4, Lasi Para, Karachi, 75100</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-phone-alt text-gold"></i>
+                            <a href="tel:03333341560" class="text-gray-400 hover:text-gold transition-colors duration-300">0333-3341560</a>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-clock text-gold"></i>
+                            <span class="text-gray-400">Mon - Sun: 12 PM – 9 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p class="text-gray-400 mb-2">
+                    &copy; 2026 Merry Queen Beauty Saloon. All Rights Reserved.
+                </p>
+                <p class="text-gray-500 text-sm">
+                    Designed with <i class="fas fa-heart text-red-500 animate-pulse"></i> for Beauty Lovers
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col space-y-4">
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/923333341560"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="floating-btn whatsapp-float"
+           aria-label="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <!-- Call Button -->
+        <a href="tel:03333341560"
+           class="floating-btn call-float"
+           aria-label="Call Now">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top"
+            class="back-to-top"
+            aria-label="Back to Top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
